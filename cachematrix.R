@@ -1,6 +1,6 @@
-## I simply set the input x as a matrix
-## and then set the solved value "s" as a null
-## then I changed every reference to "mean" to "solve"
+## First step is to set the input x as a matrix
+## after that, the solved value "s" is set as a null
+## last step is to changed "mean" to "solve"
 makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {
   s <- NULL
   set <- function(y) {
@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {
        getsolve = getsolve)
 }
 ##
-## Same here, changed "mean" to "solve" and "m" to "s"
+## changed "mean" to "solve" and "m" to "s"
 cacheSolve <- function(x, ...) {
   s <- x$getsolve()
   if(!is.null(s)) {
